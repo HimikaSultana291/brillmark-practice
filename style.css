@@ -1,0 +1,26 @@
+body{
+    color: green;
+}
+h1{
+    background-color: purple;
+} 
+.blue{
+    color: blue;
+    font-size: 25px;
+    font-family:Helvetica;
+    font-weight: bold;
+
+}
+p.purple{
+    color: purple;
+}
+h3,h4{
+    color: pink;
+   /* border: 5px solid black; */
+   border-bottom: 3px solid red;
+    border-top: 5px solid black; 
+}
+.underline{
+    text-decoration: underline;
+    font-size: 25px;
+}
