@@ -5,26 +5,29 @@ body{
 h1{
     text-decoration: underline overline;
     font-size: 150%;
+    font-style: italic;
+    text-align: center;
 } 
 
 h2{ 
     text-decoration: underline;
     font-size: 1.2em;
+    text-align: center;
+}
+
+h3{
+    color: green;
+    text-decoration: underline;
 }
 
 p.para1{
-    color: blue;
+    color: purple;
     font-size: 25px;
 }
 
 p.para2{
     color: purple;
-    font-size: 25px;
-}
-
-p.para3{
-    color: purple;
-    font-size: 15px;
+    font-size: 20px;
     font-style: italic;
     line-height: 1.5em;
     background-color: black;
@@ -32,21 +35,44 @@ p.para3{
     border-color: black;
     border-width: 2px;
     border-style: solid;
+    background-image: url(backimg.jpg);
 }
 
-p.para4{
+p.para3{
+    color: purple;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.5em;
+    background-color: black;
+    padding: 20px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    background-image: url(backimg.jpg);
+}
+
+#para4{
     color: black;
     font-size: 15px;
     line-height: 1.5em;
     background-color: #e5e4d7;
     padding: 20px;
-    border-color: black;
+    border-color: #296A64;
     border-width: 2px;
+    /* border-width: thick, medium, thin or use px; */
     border-style: solid;
+   /* border-style: dashed,dotted,double, groove, ridge, inset, outset; */
     margin: 20px;
     margin-top: 50px;
     margin-left: 400px;
-    padding-left: 40px;
+    border-radius: 10px;
+/*  border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+/*  border-bottom-style: dotted; */
+/*  border-width: thick;
+    border-style: ridge; */
 }
 
 .imagec{
@@ -60,4 +86,18 @@ p.para4{
     border-style: solid;
     height: 50%;
     width: 50%;
+}
+
+.highlight{
+    background-color: #ffff00;
+}
+
+a:link{
+    color: blue;
+}
+a:visited{
+    color: #8C8c9D;
+}
+a:hover{
+    color: #F15A51;
 }
