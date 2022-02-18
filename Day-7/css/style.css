@@ -1,0 +1,191 @@
+/*-------Floating Element css-------*/
+h1{
+    background-color: green;
+    color: yellow;
+}
+div.div1{
+    background-color: red;
+    color: white;
+    width: 50%;
+    float: left;
+}
+div.div2{
+    background-color: black;
+    color: white;
+    width: 50%;
+    float: right;
+}
+h2{
+    background-color: green;
+    color: yellow;
+}
+ .par{
+    border-color: green;
+    border-width: 2px;
+    border-style: solid;
+} 
+
+/*-------absolute css-------*/
+
+.para-ab{
+    background-color: red;
+    color: white;
+}
+
+.div-ab{
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 75px;
+    left: 150px;
+    float: left;
+    width: 250px;
+
+}
+
+/*-------fixed css-------*/
+
+.fix-div1{
+    background-color: red;
+    color: white;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+.fix-div2{
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+.fix-div3{
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 60px;
+    left: 10px;
+}
+.fix-div4{
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 90px;
+    left: 10px;
+}
+.fix-div5{
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 120px;
+    left: 10px;
+}
+
+/*-------Overflow css-------*/
+
+.ov-body{
+    background-color: #9c9f84;
+    margin: 0px;
+} 
+#main{
+    background-color: #e5e4d7;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px
+}
+#main2{
+    background-color: green;
+    color: yellow;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+    height: 120px;
+    overflow: auto;
+    /* overflow: hidden, auto, visible */
+}
+
+
+/*-------Cursor css-------*/
+
+.but-div{
+    margin-left: 20px ;
+}
+.button{
+    background: #e7e7e7;
+    border: 1px solid;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: block;
+    font: 700 13px Verdana, Georgia, serif;
+    height: 30px;
+    line-height: 28px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+a{
+    color: #666;
+    text-decoration: none;
+    float: left;
+}
+a:hover{
+    color: #000;
+    background-color: #dadada;
+    cursor: pointer;
+    /*cursor: default, inherit, auto, crosshair, pointer, move, text, help, hand, no-drop, alias, progress, wait, grab, grabbing, copy, cell, spinning, none */
+    /*cursor: url("mail.ico"), default; */
+}
+
+
+/*-------text and images css-------*/
+
+.t-body{
+    background-color: #9c9f84;
+    margin: 0px;
+}
+.image{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 300px;
+    height: 250px;
+    width: 300px;
+}
+#t-main{
+    background-color: #e5e4d7;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+}
+
+
+/*-------Relative positioning css-------*/
+
+#relat-body{
+    background-color: #9c9f84;
+}
+#relat-main1{
+    background-color: #e5e4d7;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+#relat-par{
+    color:red;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+#relat-main2{
+    background-color: #e5e4d7;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    position: relative; 
+}
+#square{
+    height: 25px;
+    width: 25px;
+    background: red;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
