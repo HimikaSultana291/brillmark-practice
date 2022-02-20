@@ -1,0 +1,163 @@
+
+/* ======================= Common CSS for selectors ======================= */
+#left{
+    width: 300px;
+    float: left;
+    padding: 15px;
+    margin: 10px;
+    background-color: #FFFFFF;
+}
+
+#center{
+    width: 300px;
+    float: left;
+    padding: 15px;
+    margin: 10px;
+    background-color: #ECF1EF;
+}
+
+#right{
+    width: 300px;
+    float: left;
+    padding: 15px;
+    margin: 10px;
+    background-color: #EBECE4;
+}
+
+#left, #center, #right{
+    border: solid 2px orange;
+}
+
+#left, #center, #right{
+    border: solid 2px green;
+}
+
+/* ======================= Sibling selector ======================= */
+h2+p {
+    color: red;
+}
+/* h2~p{
+    color: red;
+}
+/* ======================= Attribute selector ======================= */
+p[lang*="us"]{
+    background-color: orange;
+}
+/* p[lang$="fr"]{
+    background-color: orange;
+} */
+
+/* p[lang^="fr"]{
+    background-color: orange;
+} */
+
+/* p[lang ="fr"]{
+    background-color: orange;
+} */
+
+/* p[lang]{
+    background-color: orange;
+} */
+
+/* p[lang*="us"]{
+    background-color: orange;
+} */
+
+/* ======================= nth child selector ======================= */
+#right p:nth-child(3n + 4 ){
+    background-color: orange;
+} 
+/* #right p:nth-child(even){
+    background-color: orange;
+} */
+
+/* #right p:nth-child(odd){
+    background-color: orange;
+} */
+
+/* #right p:nth-child(3n + 4 ){
+    background-color: orange;
+} */
+
+/* #right p:nth-child(2n + 4 ){
+    background-color: orange;
+} */
+
+/* ======================= Not selector ======================= */
+.n-p{
+    color: red;
+}
+:not(p){
+    color: darkgreen;
+}
+/* ======================= first selector ======================= */
+.f-p::first-letter{
+    font-weight: bold;
+    font-size: 24px;
+}
+.f-p:first-line{
+    color: hotpink;
+} 
+
+
+/* ======================= Opacity ======================= */
+#box1{
+    width: 300px;
+    height: 300px;
+    float: left;
+    padding: 15px;
+    margin: 10px;
+    background-color: blue;
+}
+#box2{
+    width: 300px;
+    height: 300px;
+    float: left;
+    padding: 15px;
+    margin: 10px;
+    background-color: blue;
+    opacity: 0.5;
+}
+#box2:hover{
+    opacity: 1.0;
+}
+
+/* ======================= Linear Gradient ======================= */
+.linearGrad-box{
+    width: 800px;
+    height: 300px;
+    float: left;
+    background: blue;
+    background: linear-gradient(blue, yellow 20%);
+}
+/* ======================= Linear Gradient and opacity combine box ======================= */
+.combine-box{
+    width: 800px;
+    height: 300px;
+    float: left;
+    background: blue;
+    background: linear-gradient(rgba(255, 255, 0, 0.0), rgba(0, 0, 255, 1));
+}
+
+/* ======================= Text Shadow ======================= */
+.text1{
+    text-align: center;
+    color: black;
+    font: bold 60px Helvetica;
+    text-shadow: 3px 3px 5px orange,
+                 6px 6px 10px blue;
+}
+.text2{
+    text-align: center;
+    color: black;
+    font: bold 60px Helvetica;
+    text-shadow: 6px 6px 10px rgba(0,0,255,0.5);
+}
+
+/* ======================= Box Shadow ======================= */
+.b-box1{
+    width: 600px;
+    height: 200px;
+    background-color: lightblue;
+    box-shadow: inset 0 0 15px black;
+}
