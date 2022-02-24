@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+}
+.container{
+    border: 6px solid black;
+    display: flex; 
+    height: 400px;
+    flex-wrap: wrap;
+/*  display: inline-flex; */ /*border wraps aroung the flex item. The container only takes enough width to accomodate the childrenn */
+
+/*  flex-direction: row; ---- default value 
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse; */
+
+/*  flex-wrap: nowrap; ---- default value 
+    flex-wrap: wrap; ---- If I reduce the browser width the items wraps into the container , wrapping is required to force our content at least 2 line when reduce the width
+    flex-wrap: wrap-reverse; ---- After reducing the browser width the item-9  instead to the move below moves to the row above */
+
+/*  height: 400px;
+    flex-wrap: wrap; */
+
+/*  flex-flow: row-reverse wrap; --flex-flow property is shorthand for flex direction and flex wrap
+    flex-flow: <flex-direction> <flex-wrap> both are applied  */
+
+/*  justify-content: flex-start; ---default
+    justify-content: flex-end; ---flows from right to left 
+    justify-content: center; ---items are placed into center
+    justify-content: space-between; 
+    justify-content: space-around; 
+    justify-content: space-evenly; ---The space are equally distibuted into the container*/
+
+/*  height: 800px;
+    align-items: stretch; --default value
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center
+    align-items: baseline; --- The text inside each items are aligned */
+
+/*  height: 800px
+    flex-wrap: wrap; ---wrapping is required to force our content at least 2 line when reduce the width
+    align-content: stretch; ----Default Value
+    align-content: flex-start;
+    align-content: flex-end;
+     */
+
+}
+.flex-item{
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+} 
+.item-1{
+    background-color: #1dd1a1;
+}
+.item-2{
+    background-color: #576574;
+    /*
+    Note:  for align-item: baseline, I add padding and font size for better understanding for 3 items 
+    padding-bottom: 3rem; */
+}
+.item-3{
+    background-color: #2e86de;
+    /*
+    Note:  for align-item: baseline, I add padding and font size for better understanding for 3 items 
+    padding-bottom: 5rem; */
+}
+.item-4{
+    background-color: #222f3e;
+    /*
+    Note:  for align-item: baseline, I add padding and font size for better understanding for 3 items 
+    font-size: 3rem; */
+}
+.item-5{
+    background-color: #01a3a4;
+/*  order: 1; */
+}
+.item-6{
+    background-color: #82589F;
+}
+.item-7{
+    background-color: #cd6133;
+}
+.item-8{
+    background-color: #218c74;
+}
+.item-9{
+    background-color: #b33939;
+}
