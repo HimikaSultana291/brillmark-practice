@@ -3,9 +3,7 @@ body{
 }
 .container{
     border: 6px solid black;
-    display: flex; 
-    height: 400px;
-    flex-wrap: wrap;
+    display: flex;
 /*  display: inline-flex; */ /*border wraps aroung the flex item. The container only takes enough width to accomodate the childrenn */
 
 /*  flex-direction: row; ---- default value 
@@ -43,6 +41,7 @@ body{
     align-content: flex-start;
     align-content: flex-end;
      */
+/*    height: 400px; --->For align-self I set the height */
 
 }
 .flex-item{
@@ -50,18 +49,34 @@ body{
     font-size: 1.5rem;
     padding: 1rem;
     text-align: center;
+/*  flex-grow: 1; ----> All items grow equally to take up the left over space. Theres no additional space at the left of the container */
+/*  flex-shrink: 0; */
+
+/*  Note: flex property accept 3 values.
+    flex: <flex-grow> <flex-shrink> <flex-basis>
+    Exmple: flex: 2 5 250px; 
+            flex: 0 1 auto   
+flex: 2 --> 1 value , unitles numb for flex grow exp: flex: 2, One value, width/height: flex-basis exp: flex: 10em or 30px
+flex: 1 30px --> flex-grow | flex-shrink */
+
 } 
 .item-1{
     background-color: #1dd1a1;
+/*    align-self: flex-start; */
 }
 .item-2{
-    background-color: #576574;
+    background-color: #576574; 
+/*    align-self: flex-end; */
     /*
     Note:  for align-item: baseline, I add padding and font size for better understanding for 3 items 
     padding-bottom: 3rem; */
+
+/*  flex-shrink: 4;  ---> The item-2 shrink 4 times as much as the others items */
+/*  flex-basis: 400px; */
 }
 .item-3{
     background-color: #2e86de;
+/*    align-self: center; */
     /*
     Note:  for align-item: baseline, I add padding and font size for better understanding for 3 items 
     padding-bottom: 5rem; */
@@ -75,6 +90,7 @@ body{
 .item-5{
     background-color: #01a3a4;
 /*  order: 1; */
+/*  flex-grow: 1; */
 }
 .item-6{
     background-color: #82589F;
