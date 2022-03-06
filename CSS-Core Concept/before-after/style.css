@@ -1,0 +1,44 @@
+.body-p{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+
+p::before{
+    content: '';
+    background: red;
+    display: block;
+    width: 10px;
+    height: 10px;
+}
+P::after{
+    content: '';
+    background: green;
+    display: block;
+    width: 10px;
+    height: 10px;
+}
+
+.body-span{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+span::before{
+    content: 'hello';
+    background: red;
+    font-size: 20px;
+    color: white;
+    font-weight: 900;
+}
+span::after{
+    content: 'goodbye';
+    background: red;
+    font-size: 20px;
+    color: white;
+    font-weight: 900;
+}

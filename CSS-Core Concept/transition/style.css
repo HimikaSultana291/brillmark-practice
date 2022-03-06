@@ -1,0 +1,92 @@
+body{
+    margin: 100px;
+}
+.box{
+    width: 300px;
+    height: 300px;
+    background: #3DCCC7;
+/*  transition-duration: 1000ms;
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-delay: 1s; */
+
+    transition: 1s all ease-in, 500ms all ease-out 1s;
+}
+.box:hover{
+    background: #FF6B6B;
+    transform: rotate(45deg);
+}
+
+
+.timinig-function{
+	background-color:#bdc3c7;
+	padding:20px 0;
+}
+.t-1{
+	background:#16a085;
+	height:100px;
+	width:300px;
+	transition-duration:1s;
+	transition-timing-function:ease; /*egula shb hover korlei kaj korbe*/
+	margin-bottom:10px;
+	transition-delay:1s;
+}
+.t-2{
+	background:#d35400;
+	height:100px;
+	width:300px;
+	transition-duration:1s;
+	transition-timing-function:linear;
+	margin-bottom:10px;
+	
+}
+.t-3{
+	background:#e74c3c;
+	height:100px;
+	width:300px;
+	transition-duration:1s;
+	transition-timing-function:ease-in;
+	margin-bottom:10px;
+}
+.t-4{
+	background:#8e44ad;
+	height:100px;
+	width:300px;
+	transition-duration:1s;
+	transition-timing-function:ease-out;
+	margin-bottom:10px;
+}
+.t-5{
+	background:#2980b9;
+	height:100px;
+	width:300px;
+	transition-duration:1s;
+	transition-timing-function:ease-in-out;
+	margin-bottom:10px;
+}
+.timinig-function:hover div{ /*timinig-function er upr hover korle er vitorer div er upr kaj korbe*/
+	width:500px;
+	transform:skewX(60deg);
+}
+.green{
+	background-color:#27ae60;
+	height:250px;
+	width:450px;
+	margin:20px auto;
+	position:relative; /* circle ta sudhu green div er sapekhe kaj korar jonno*/
+}
+.red{
+	background-color:#c0392b;
+	height:0px;
+	width:0px;
+	position:absolute; 
+	top:50%; /* red er parent green k position:relative korar karon e eta green div tar sapekhe kaj korse jodi green div k position na krtm tahole eta pura screen sapekhe kaj korto */
+	left:50%;
+	transform:translate(-50% ,-50%); /*  Khata */
+	border-radius:50%;	
+	transition-duration:500ms;
+}
+.green:hover .red{
+	height:150px;
+	width:150px;
+}

@@ -4,7 +4,8 @@ body{
 .container{
     border: 6px solid black;
     display: flex;
-/*  display: inline-flex; */ /*border wraps aroung the flex item. The container only takes enough width to accomodate the childrenn */
+
+/*  display: inline-flex; */ /*border wraps around the flex item. The container only takes enough width to accomodate the childrenn */
 
 /*  flex-direction: row; ---- default value 
     flex-direction: row-reverse;
@@ -89,11 +90,13 @@ flex: 1 30px --> flex-grow | flex-shrink */
 }
 .item-5{
     background-color: #01a3a4;
+
 /*  order: 1; */
 /*  flex-grow: 1; */
 }
 .item-6{
     background-color: #82589F;
+
 }
 .item-7{
     background-color: #cd6133;
@@ -103,4 +106,5 @@ flex: 1 30px --> flex-grow | flex-shrink */
 }
 .item-9{
     background-color: #b33939;
+
 }
